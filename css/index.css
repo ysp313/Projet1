@@ -63,6 +63,18 @@ nav>ul ul{
     padding: 0px;
 }
 
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#social>img{
+    height: 20px;
+    width: 20px;
+}
+
 nav>ul>li{
     padding: 5px;
 }
@@ -76,3 +88,14 @@ nav ul li a{
 }
 
 nav ul li a:hover {color:#e88800;}
+#stats>h4{
+margin: 0px;
+}
+
+footer>p{
+    margin: 0px;
+}
+body{
+    padding:0px;
+    margin:0px;
+}
