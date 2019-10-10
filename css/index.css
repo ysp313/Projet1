@@ -18,16 +18,11 @@ nav{
     justify-content: space-between;
 }
 
-position: fixed;
-top: 0;
-width: 100%;
-
 nav>ul{
     display: flex;
     list-style: none;
     width: 70%;
     align-items: center;
-    flex: 1
 }
 
 nav>ul>li{
