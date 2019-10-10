@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
+
 body{
     padding:0px;
     margin:0px;
@@ -33,8 +30,6 @@ nav>ul ul{
 nav>ul>li{
     padding: 5px;
 }
-
->>>>>>> master
 nav{
     display: flex;
     flex-direction: row;
@@ -58,7 +53,6 @@ nav>ul{
 nav > ul li:hover .dessous{
     display: block;
 }
-<<<<<<< HEAD
 nav ul li a{
     text-decoration: none;
     font-family:Arial, Helvetica, sans-serif;
@@ -68,8 +62,6 @@ nav ul li a{
 }
 
 nav ul li a:hover {color:#e88800;}
-=======
->>>>>>> master
 
 nav>ul ul{
     display: flex;
@@ -79,10 +71,8 @@ nav>ul ul{
     margin: 0px;
     padding: 0px;
 }
-<<<<<<< HEAD
 ul{
     list-style: none;
-=======
 
 footer{
     display:flex;
@@ -100,16 +90,13 @@ footer{
 nav>ul>li{
     padding: 5px;
 }
-<<<<<<< HEAD
 body{
     padding:0px;
     margin:0px;
     font: 12px/22px Arial, Helvetica, sans-serif;
     color:#8f8b8c;
     background: url(../img/bg.jpg) center 0 repeat;
-}
->>>>>>> Stashed changes
-=======
+
 
 nav ul li a{
     text-decoration: none;
@@ -131,4 +118,3 @@ body{
     padding:0px;
     margin:0px;
 }
->>>>>>> master
