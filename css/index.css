@@ -27,8 +27,28 @@ ul{
     list-style: none;
 }
 
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#social>img{
+    height: 20px;
+    width: 20px;
+}
+
 nav>ul>li{
     padding: 5px;
+}
+
+#stats>h4{
+margin: 0px;
+}
+
+footer>p{
+    margin: 0px;
 }
 body{
     padding:0px;
