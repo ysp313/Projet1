@@ -1,3 +1,4 @@
+
 body{
     padding:0px;
     margin:0px;
@@ -18,16 +19,11 @@ nav{
     justify-content: space-between;
 }
 
-position: fixed;
-top: 0;
-width: 100%;
-
 nav>ul{
     display: flex;
     list-style: none;
     width: 70%;
     align-items: center;
-    flex: 1
 }
 
 nav>ul>li{
@@ -39,7 +35,7 @@ nav>ul>li{
     margin-right: 1%;
 }
 nav>ul>li>ul{
-width: 19%;}
+width: 16%;}
 nav>ul>li>ul>li{
 padding:5px;    
 }
