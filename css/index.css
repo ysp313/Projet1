@@ -1,23 +1,22 @@
-body{
-    padding:0px;
-    margin:0px;
+body {
+    padding: 0px;
+    margin: 0px;
     font: 12px/22px Arial, Helvetica, sans-serif;
-    color:#8f8b8c;
+    color: #8f8b8c;
     background: url(../img/bg.jpg) center 0 repeat;
 }
 
-header>img{
+header>img {
     width: 100%;
     display: block;
 }
 
-nav>ul{
+nav>ul {
     display: flex;
     list-style: none;
 }
 
-
-nav>ul ul{
+nav>ul ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -26,35 +25,73 @@ nav>ul ul{
     padding: 0px;
 }
 
-nav>ul>li{
+nav>ul>li {
     padding: 5px;
 }
 
-nav{
+#cgu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#faq {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#faq h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#faq>ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+#faq>ul>li {
+    width: 50%;
+}
+
+#cgu>p {
+    margin: 20px;
+}
+
+nav {
     display: flex;
     flex-direction: row;
     padding: 5px;
     background-image: url(../img/header.jpg);
     justify-content: space-between;
 }
-header>img{
+
+header>img {
     width: 100%;
     display: block;
 }
-nav>ul{
+
+nav>ul {
     display: flex;
 }
-.dessous{
+
+.dessous {
     display: none;
-    box-shadow: 0px 1px 2px #CCC;
+    box-shadow: 0px 1px 2px #ccc;
     background-color: white;
     position: absolute;
 }
-nav > ul li:hover .dessous{
+
+nav>ul li:hover .dessous {
     display: block;
 }
 
-nav>ul ul{
+nav>ul ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -63,39 +100,43 @@ nav>ul ul{
     padding: 0px;
 }
 
-footer{
-    display:flex;
+footer {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#social>img{
+#social>img {
     height: 20px;
     width: 20px;
 }
 
-nav>ul>li{
+nav>ul>li {
     padding: 5px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:16px; 
-    color:#8f8b8c; 
-    line-height:22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #8f8b8c;
+    line-height: 22px;
 }
 
-nav ul li a:hover {color:#e88800;}
-#stats>h4{
-margin: 0px;
+nav ul li a:hover {
+    color: #e88800;
 }
 
-footer>p{
+#stats>h4 {
     margin: 0px;
 }
-body{
-    padding:0px;
-    margin:0px;
+
+footer>p {
+    margin: 0px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
 }
