@@ -35,30 +35,6 @@ nav>ul>li {
     align-items: center;
 }
 
-#faq {
-    display: block;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-#faq h2 {
-    text-align: center;
-    width: 100%;
-}
-
-#faq>ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-}
-
-#faq>ul>li {
-    width: 50%;
-}
-
 #cgu>p {
     margin: 20px;
 }
