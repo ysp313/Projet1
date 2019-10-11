@@ -6,42 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechLib</title>
     <link rel="stylesheet" href="/css/faq.css" />
-    <link rel="stylesheet" href="/css/index.css>" />
+    <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <script src="/javascript/main.js"></script>
-
-    <script src="../javascript/main.js"></script>
 </head>
 
 <body onload="insertCommon()">
     <header></header>
-    <script>
-        function test(e) {
-            var p = document
-                .getElementById(e)
-                .parentElement.getElementsByTagName("p");
-
-            for (let i in p) {
-                if (p[i].classList != null) {
-                    for (let j of p[i].classList) {
-                        if (j === "hide") {
-                            p[i].classList.remove("hide");
-                            p[i].classList.add("show");
-                        } else {
-                            p[i].classList.remove("show");
-                            p[i].classList.add("hide");
-                        }
-                    }
-                } else if (p[i].className === "hide") {
-                    p[i].className = "show";
-                } else {
-                    p[i].className = "hide";
-                }
-            }
-            console.log();
-        }
-    </script>
     <section id="faq">
         <h2>Foire aux questions</h2>
         <ul>
@@ -132,13 +104,7 @@
             </li>
         </ul>
     </section>
-    <footer>
-        <img src="./img/download-1.jpg" alt="Facebook" />
-        <img src="./img/download-1.png" alt="instagram" />
-        <img src="./img/download-2.jpg" alt="twitter" />
-        <img src="img/download.png" alt="Mail" />
-        <p>Copyright ipsum</p>
-    </footer>
+    <footer></footer>
 </body>
 
 </html>

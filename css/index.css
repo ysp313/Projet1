@@ -25,3 +25,36 @@ footer {
 #stats>h4 {
     margin: 0px;
 }
+
+header+section {
+    margin-top: 80px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.first {
+    display: block;
+}
+
+.index>p {
+    order: 3;
+}
+
+.index>img {
+    order: 2;
+}

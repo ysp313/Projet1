@@ -10,17 +10,32 @@
     <link rel="stylesheet" href="/css/header.css" />
 
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <script src="javascript/main.js"></script>
 </head>
 
 <body onload="insertCommon()">
     <header></header>
+    <section id="sliders">
+        <div class="w3-content w3-display-container">
+            <img class="mySlides first" src="https://picsum.photos/id/63/320/180" style="width:100%" />
+            <img class="mySlides" src="https://picsum.photos/id/68/320/180" style="width:100%" />
+            <img class="mySlides" src="https://picsum.photos/id/93/320/180" style="width:100%" />
+            <img class="mySlides" src="https://picsum.photos/id/73/320/180" style="width:100%" />
 
-    <div id="article">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
+					&#10094;
+				</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
+					&#10095;
+				</button>
+        </div>
+    </section>
+    <section id="article">
         <article class="index">
             <img src="https://picsum.photos/id/63/300/300" alt="#" />
-            <h2>lorem</h2>
+            <h2>Article 1</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dicta praesentium consectetur illum veritatis? Porro nulla aspernatur odio, eveniet voluptatem atque. Tempora illum ipsam atque eius, officiis porro fugiat debitis!
             </p>
@@ -28,7 +43,7 @@
 
         <article class="index">
             <img src="https://picsum.photos/id/67/300/300" alt="#" />
-            <h2>lorem</h2>
+            <h2>Article 2</h2>
 
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dicta praesentium consectetur illum veritatis? Porro nulla aspernatur odio, eveniet voluptatem atque. Tempora illum ipsam atque eius, officiis porro fugiat debitis!
@@ -37,12 +52,12 @@
 
         <article class="index">
             <img src="https://picsum.photos/id/62/300/300" alt="#" />
-            <h2>lorem</h2>
+            <h2>Article 3</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dicta praesentium consectetur illum veritatis? Porro nulla aspernatur odio, eveniet voluptatem atque. Tempora illum ipsam atque eius, officiis porro fugiat debitis!
             </p>
         </article>
-    </div>
+    </section>
 
     <footer></footer>
 </body>

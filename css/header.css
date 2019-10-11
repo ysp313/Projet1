@@ -1,19 +1,18 @@
-  
-body{
-    padding:0px;
-    margin:0px;
+body {
+    padding: 0px;
+    margin: 0px;
     font: 12px/22px Arial, Helvetica, sans-serif;
-    color:#8f8b8c;
+    color: #8f8b8c;
     background: url(../img/bg.jpg) center 0 repeat;
 }
 
-header>img{
+header>img {
     width: 70px;
     height: 70px;
     display: block;
 }
 
-nav{
+nav {
     background-image: url(../img/header.jpg);
     width: 100%;
     display: flex;
@@ -29,31 +28,30 @@ label {
     line-height: 70px;
 }
 
-
-.menu{
+.menu {
     display: flex;
-    width:80%;
+    width: 80%;
     align-items: center;
     padding: 5px;
     text-align: center;
 }
 
-nav a{
+nav a {
     width: 100%;
     display: block;
     text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:16px; 
-    color:black; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
     background: #e88800;
-    line-height:22px;
+    line-height: 22px;
     margin-left: 10px;
 }
 
-.dessous{
+.dessous {
     display: none;
     list-style: none;
-    box-shadow: 0px 1px 2px #CCC;
+    box-shadow: 0px 1px 2px #ccc;
     background-color: #e88800;
     flex-direction: column;
     justify-content: flex-end;
@@ -61,59 +59,64 @@ nav a{
     z-index: 3;
 }
 
-nav>.menu>a:hover{
+nav>.menu>a:hover {
     background-color: black;
     color: #e88800;
-
 }
 
+nav>a {
+    display: contents;
+}
 
-.deroulant:hover + .dessous{
+nav>a>img {
+    height: 70px;
+    align-self: center;
+    width: fit-content;
+}
+
+.deroulant:hover+.dessous {
     display: block;
 }
+
 .dessous:hover {
     display: block;
 }
-nav>label{
+
+nav>label {
     display: none;
     font-size: 26px;
 }
 
-#burger{
+#burger {
     display: none;
 }
 
-
-
 @media only screen and (max-width: 600px) {
-        nav>label {
-            display: block;
-            cursor: pointer;
-        }
-        .menu {
-            text-align: center;
-            widows: 100%;
-            flex-direction: column;
-            display: none;
-        }
-        .menu>a {
-            display: block;
-            margin: 0;
-        }
-        nav>div{
-            flex: 1;
-            order:2;
-        }
-        .dessous {
-            display: block;
-        }
-        #burger:checked + .menu {
-            display: block;
-        }
-
-        .dessous{
-            background-color: #e887007e;
-        }
-
-    
+    nav>label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        widows: 100%;
+        flex-direction: column;
+        display: none;
+    }
+    .menu>a {
+        display: block;
+        margin: 0;
+    }
+    nav>div {
+        flex: 1;
+        order: 2;
+    }
+    .dessous {
+        display: block;
+    }
+    #burger:checked+.menu {
+        display: block;
+    }
+    .dessous {
+        background-color: #e887007e;
+    }
 }
