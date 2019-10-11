@@ -2,55 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechLib</title>
-    <link rel="stylesheet" href="../css/faq.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/faq.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
+    <script src="../javascript/main.js"></script>
 </head>
 
-<body>
-    <header>
-        <img class="bandeLogo" src="#" alt="banderole avec logo du site">
-        <div class="navbar">
-            <ul>
-                <li>
-                    <img src="logo" alt="logo du site">
-                </li>
-                <li class="deroulant"><a href="#">Techno</a></li>
-                <ul class="dessous">
-                    <li><a href="./html/techno/technoCSS.html">CSS</a></li>
-                    <li><a href="./html/techno/technoJava.html">Java</a></li>
-                    <li><a href="./html/techno/technoPHP.html">PHP</a></li>
-                </ul>
-                <li><a href="./html/aboutus.html">A propos</a></li>
-                <li><a href="./html/contact.html">Contact</a></li>
-                <li><a href="./html/faq.html">FaQ</a></li>
-            </ul>
-    </header>
+<body onload="insertCommon()">
+    <header></header>
     <script>
         function test(e) {
-            var p = document.getElementById(e).parentElement.getElementsByTagName("p");
+            var p = document
+                .getElementById(e)
+                .parentElement.getElementsByTagName("p");
 
             for (let i in p) {
                 if (p[i].classList != null) {
                     for (let j of p[i].classList) {
                         if (j === "hide") {
-                            p[i].classList.remove('hide')
-                            p[i].classList.add('show')
+                            p[i].classList.remove("hide");
+                            p[i].classList.add("show");
                         } else {
-                            p[i].classList.remove('show')
-                            p[i].classList.add('hide')
+                            p[i].classList.remove("show");
+                            p[i].classList.add("hide");
                         }
                     }
-                } else
-                if (p[i].className === 'hide') {
-                    p[i].className = 'show'
+                } else if (p[i].className === "hide") {
+                    p[i].className = "show";
                 } else {
-                    p[i].className = 'hide'
+                    p[i].className = "hide";
                 }
-
             }
             console.log();
         }
@@ -71,7 +57,6 @@
             <li>
                 <h3 id="2" onclick="test(this.id)">
                     Fusce et ante laoreet, interdum turpis vitae, consequat nisl.
-
                 </h3>
                 <p class="hide">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus arcu, scelerisque at mauris sed, finibus vestibulum odio. Mauris congue dignissim rutrum. Etiam neque justo, viverra quis blandit sed, semper in dolor. Donec accumsan ante et ligula
@@ -97,7 +82,8 @@
                     Vestibulum convallis sit amet erat vel feugiat. Suspendisse viverra orci nec dui bibendum posuere. Cras condimentum aliquam varius. Mauris convallis consectetur neque non bibendum. Mauris luctus, lectus quis euismod aliquet, orci elit sodales erat, nec
                     commodo lacus nunc nec lacus. Praesent in nibh nulla. Quisque vitae ex a ipsum cursus tincidunt. Sed turpis dui, gravida nec felis quis, iaculis accumsan nisi. In est leo, congue nec ipsum eu, porttitor pulvinar lectus. Nullam lobortis
                     commodo diam, sed euismod libero pellentesque at. Cras maximus convallis urna, non egestas ante tincidunt at. Integer cursus diam quis diam sagittis auctor. Sed viverra mauris at laoreet mollis. Nulla condimentum ex leo, eu tincidunt
-                    nisl lobortis quis. Ut quis bibendum urna, vel finibus enim. Quisque sollicitudin magna eget massa tincidunt, in sollicitudin urna convallis.</p>
+                    nisl lobortis quis. Ut quis bibendum urna, vel finibus enim. Quisque sollicitudin magna eget massa tincidunt, in sollicitudin urna convallis.
+                </p>
             </li>
             <li>
                 <h3 id="5" onclick="test(this.id)">
@@ -107,7 +93,8 @@
                     Ut in tempor quam. Sed semper dolor convallis mollis pulvinar. Mauris non condimentum neque. Nulla rutrum gravida commodo. Nulla convallis nisi nisi, ut sollicitudin lorem faucibus in. Pellentesque quis libero ipsum. Duis efficitur et nulla nec tempor.
                     Integer ornare augue non arcu molestie, fermentum fringilla tellus tristique. Integer efficitur, velit id scelerisque commodo, erat lacus porta turpis, a varius sapien diam sit amet libero. Pellentesque non urna consectetur, convallis
                     ligula at, vehicula erat. Phasellus pharetra lorem ipsum, et ultrices lacus fermentum eget. Aenean faucibus justo ultricies, iaculis nisl id, condimentum tortor. Pellentesque commodo venenatis tempor. Fusce non ex quis risus vestibulum
-                    pulvinar eget in tellus. Nunc fermentum libero efficitur, consectetur tellus in, feugiat est.</p>
+                    pulvinar eget in tellus. Nunc fermentum libero efficitur, consectetur tellus in, feugiat est.
+                </p>
             </li>
         </ul>
         <ul>
@@ -119,7 +106,8 @@
                     Quisque lectus magna, aliquet sit amet orci semper, pharetra accumsan elit. Sed feugiat, massa in pellentesque hendrerit, nibh nunc efficitur mauris, eu maximus ipsum urna nec est. Quisque at accumsan ligula. Praesent rhoncus maximus nisl et elementum.
                     Ut luctus semper eros, a pulvinar lorem dapibus vitae. Curabitur id congue ex. Morbi elit leo, porttitor in dui vitae, bibendum dapibus orci. Aliquam vel mauris a enim imperdiet tempor a a ex. Integer tempus libero turpis, non dignissim
                     nisi ultricies id. Duis convallis vehicula lorem nec cursus. Proin consequat tellus vitae sapien hendrerit maximus. Mauris mattis dolor nec neque semper, vitae imperdiet ex fermentum. Nam finibus odio vitae augue hendrerit congue nec
-                    sodales enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                    sodales enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                </p>
             </li>
             <li>
                 <h3 id="7" onclick="test(this.id)">
@@ -128,7 +116,8 @@
                 <p class="hide">
                     Duis gravida odio vel consectetur tincidunt. Sed id tempus diam. Cras nulla dolor, tristique a laoreet at, vehicula in sapien. Sed rhoncus consectetur ornare. Vivamus laoreet ut enim sit amet congue. Nulla dui nibh, accumsan nec nulla vel, dignissim interdum
                     turpis. Mauris molestie finibus ante, pellentesque pulvinar dui vehicula et. Phasellus libero nisl, hendrerit eu ante eget, mollis maximus sapien. Morbi faucibus sed nulla et cursus. Etiam luctus metus ipsum, sed sollicitudin arcu
-                    aliquet in. Praesent sollicitudin efficitur sodales. In dui magna, tincidunt id magna a, suscipit aliquam nunc. Quisque sit amet faucibus nisl. Aenean placerat ex blandit quam venenatis consectetur.</p>
+                    aliquet in. Praesent sollicitudin efficitur sodales. In dui magna, tincidunt id magna a, suscipit aliquam nunc. Quisque sit amet faucibus nisl. Aenean placerat ex blandit quam venenatis consectetur.
+                </p>
             </li>
             <li>
                 <h3 id="8" onclick="test(this.id)">
@@ -137,18 +126,18 @@
                 <p class="hide">
                     Donec malesuada ligula pellentesque, blandit leo non, congue nunc. Aenean posuere justo tortor, vel cursus dolor interdum at. Fusce mi est, commodo vel iaculis et, feugiat vel metus. Sed non porta odio. Donec non purus et mi mattis dictum non eget quam.
                     Proin vel ullamcorper metus. Donec porta nunc nec lorem commodo luctus. Vivamus feugiat sapien et placerat iaculis. Aenean a lorem ante. Aenean finibus augue eu mauris sodales, vel tincidunt nisi ornare. Nam condimentum in metus in
-                    vestibulum. Praesent eu neque vitae erat sagittis volutpat.</p>
+                    vestibulum. Praesent eu neque vitae erat sagittis volutpat.
+                </p>
             </li>
         </ul>
     </section>
     <footer>
-        <img src="./img/download-1.jpg" alt="Facebook">
-        <img src="./img/download-1.png" alt="instagram">
-        <img src="./img/download-2.jpg" alt="twitter">
-        <img src="img/download.png" alt="Mail">
+        <img src="./img/download-1.jpg" alt="Facebook" />
+        <img src="./img/download-1.png" alt="instagram" />
+        <img src="./img/download-2.jpg" alt="twitter" />
+        <img src="img/download.png" alt="Mail" />
         <p>Copyright ipsum</p>
     </footer>
-
 </body>
 
 </html>
