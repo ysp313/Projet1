@@ -4,14 +4,28 @@
 
 .prestation {
     display: flex;
+}
+
+.prestation>div {
+    display: flex;
+    flex-direction: column;
 
 }
 
+.prestation>div>h2 {
+    height: fit-content;
+
+}
 
 #partenaires {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
+
+}
+
+.part {
+    align-items: center;
 }
 
 #partenaires>h2 {
@@ -22,5 +36,16 @@
 #partenaires>.part {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50%;
+}
+
+.part>h3>p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 400px) {
+    .prestation {
+        width: 30%;
+    }
 }
