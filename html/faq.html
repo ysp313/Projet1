@@ -1,75 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TechLib</title>
-        <link rel="stylesheet" href="./css/index.css">
+    <title>TechLib</title>
+    <link rel="stylesheet" href="../css/faq.css">
+    <link rel="stylesheet" href="../css/index.css">
+
 </head>
 
-    <body>
-        <header>
-            <img class="bandeLogo" src="#" alt="banderole avec logo du site">
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <img src="logo" alt="logo du site">
-                    </li>
-                    <li class="deroulant"><a href="#">Techno</a></li>
-                        <ul class="dessous">
-                            <li><a href="./html/techno/technoCSS.html">CSS</a></li>
-                            <li><a href="./html/techno/technoJava.html">Java</a></li>
-                            <li><a href="./html/techno/technoPHP.html">PHP</a></li>
-                        </ul>
-                    <li><a href="./html/aboutus.html">A propos</a></li>
-                    <li><a href="./html/contact.html">Contact</a></li>
-                    <li><a href="./html/faq.html">FaQ</a></li>
-                </ul>
-        </header>
-        <section id="faq">
-            <h2>Foire aux questions</h2>
+<body>
+    <header>
+        <img class="bandeLogo" src="#" alt="banderole avec logo du site">
+        <div class="navbar">
             <ul>
                 <li>
-                    <h3></h3>
-                    <p></p>
+                    <img src="logo" alt="logo du site">
                 </li>
-                <li>
-                    <h3></h3>
-                    <p></p>
-                </li>
-                <li>
-                    <h3></h3>
-                    <p></p>
-                </li>
-                <li>
-                    <h3></h3>
-                    <p></p>
-                </li>
-                <li>
-                    <h3></h3>
-                    <p></p>
-                </li>
-                <li>
-                    <h3></h3>
-                    <p></p>
-                </li>
-                <li>
-                    <h3></h3>
-                    <p></p>
-                </li>
-                <li>
-                    <h3></h3>
-                    <p></p>
-                </li>
+                <li class="deroulant"><a href="#">Techno</a></li>
+                <ul class="dessous">
+                    <li><a href="./html/techno/technoCSS.html">CSS</a></li>
+                    <li><a href="./html/techno/technoJava.html">Java</a></li>
+                    <li><a href="./html/techno/technoPHP.html">PHP</a></li>
+                </ul>
+                <li><a href="./html/aboutus.html">A propos</a></li>
+                <li><a href="./html/contact.html">Contact</a></li>
+                <li><a href="./html/faq.html">FaQ</a></li>
             </ul>
-        </section>
-        <footer>
-            <img src="./img/download-1.jpg" alt="Facebook">
-            <img src="./img/download-1.png" alt="instagram">
-            <img src="./img/download-2.jpg" alt="twitter">
-            <img src="img/download.png" alt="Mail">
-            <p>Copyright ipsum</p>
-        </footer>
+    </header>
+    <script>
+        function test(e) {
+            var p = document.getElementById(e).parentElement.getElementsByTagName("p");
+
+            for (let i in p) {
+                if (p[i].classList != null) {
+                    for (let j of p[i].classList) {
+                        if (j === "hide") {
+                            p[i].classList.remove('hide')
+                            p[i].classList.add('show')
+                        } else {
+                            p[i].classList.remove('show')
+                            p[i].classList.add('hide')
+                        }
+                    }
+                } else
+                if (p[i].className === 'hide') {
+                    p[i].className = 'show'
+                } else {
+                    p[i].className = 'hide'
+                }
+
+            }
+            console.log();
+        }
+    </script>
+    <section id="faq">
+        <h2>Foire aux questions</h2>
+        <ul>
+            <li>
+                <h3 id="1" onclick="test(this.id)">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h3>
+                <p class="hide">
+                    Proin pulvinar ultrices viverra. Nunc non consectetur libero, a consectetur odio. Donec laoreet leo in nibh fringilla, ut pretium sem vulputate. Quisque turpis leo, iaculis eu congue et, dictum ac eros. Nam ut vehicula erat. Duis eget massa convallis
+                    sapien aliquam tristique sit amet vel ante. Suspendisse rhoncus dolor massa, vel congue enim dictum sit amet. Fusce faucibus dui sit amet neque vestibulum ultricies. Duis in dignissim ligula, in blandit dui. Morbi tincidunt, dolor
+                    non blandit volutpat, magna est sodales diam, ut dictum libero magna sed tortor.
+                </p>
+            </li>
+            <li>
+                <h3 id="2" onclick="test(this.id)">
+                    Fusce et ante laoreet, interdum turpis vitae, consequat nisl.
+
+                </h3>
+                <p class="hide">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tellus arcu, scelerisque at mauris sed, finibus vestibulum odio. Mauris congue dignissim rutrum. Etiam neque justo, viverra quis blandit sed, semper in dolor. Donec accumsan ante et ligula
+                    volutpat finibus. Nunc ullamcorper pharetra quam, non egestas nunc rutrum non. Suspendisse tempor nisi non lectus faucibus, a auctor sem facilisis. Morbi nisl sapien, blandit in dapibus vel, tristique sit amet dui. Nam malesuada nulla
+                    nec justo feugiat tempor. Ut lobortis nulla ut risus eleifend tempus. Quisque tristique molestie ipsum eget varius. Nullam eget nibh quis nisi ornare pulvinar et et velit. In laoreet metus et tortor porta dapibus.
+                </p>
+            </li>
+            <li>
+                <h3 id="3" onclick="test(this.id)">
+                    Vivamus finibus dolor eu enim dapibus maximus.
+                </h3>
+                <p class="hide">
+                    Donec vulputate, nunc sit amet viverra ornare, eros diam dictum justo, ac pretium nisi orci id magna. Vestibulum imperdiet congue semper. Nunc at tristique leo. In feugiat lectus sit amet consequat accumsan. Ut accumsan diam eu ullamcorper mollis. Donec
+                    sapien lectus, condimentum ut nisl nec, faucibus gravida libero. Sed mollis quis orci tincidunt sodales. Pellentesque mollis turpis et sodales ultricies. Maecenas a lacus et felis lobortis venenatis. Vivamus mattis erat ut ipsum pulvinar
+                    varius. Vivamus condimentum orci eget urna vehicula, quis venenatis enim consectetur. Aenean mauris dolor, ultrices in nisl ac, maximus fringilla nisi. Quisque laoreet quam sed commodo pellentesque.
+                </p>
+            </li>
+            <li>
+                <h3 id="4" onclick="test(this.id)">
+                    Cras et elit posuere risus pellentesque feugiat nec sit amet leo.
+                </h3>
+                <p class="hide">
+                    Vestibulum convallis sit amet erat vel feugiat. Suspendisse viverra orci nec dui bibendum posuere. Cras condimentum aliquam varius. Mauris convallis consectetur neque non bibendum. Mauris luctus, lectus quis euismod aliquet, orci elit sodales erat, nec
+                    commodo lacus nunc nec lacus. Praesent in nibh nulla. Quisque vitae ex a ipsum cursus tincidunt. Sed turpis dui, gravida nec felis quis, iaculis accumsan nisi. In est leo, congue nec ipsum eu, porttitor pulvinar lectus. Nullam lobortis
+                    commodo diam, sed euismod libero pellentesque at. Cras maximus convallis urna, non egestas ante tincidunt at. Integer cursus diam quis diam sagittis auctor. Sed viverra mauris at laoreet mollis. Nulla condimentum ex leo, eu tincidunt
+                    nisl lobortis quis. Ut quis bibendum urna, vel finibus enim. Quisque sollicitudin magna eget massa tincidunt, in sollicitudin urna convallis.</p>
+            </li>
+            <li>
+                <h3 id="5" onclick="test(this.id)">
+                    Vestibulum vitae metus quis massa luctus finibus eget vel dui.
+                </h3>
+                <p class="hide">
+                    Ut in tempor quam. Sed semper dolor convallis mollis pulvinar. Mauris non condimentum neque. Nulla rutrum gravida commodo. Nulla convallis nisi nisi, ut sollicitudin lorem faucibus in. Pellentesque quis libero ipsum. Duis efficitur et nulla nec tempor.
+                    Integer ornare augue non arcu molestie, fermentum fringilla tellus tristique. Integer efficitur, velit id scelerisque commodo, erat lacus porta turpis, a varius sapien diam sit amet libero. Pellentesque non urna consectetur, convallis
+                    ligula at, vehicula erat. Phasellus pharetra lorem ipsum, et ultrices lacus fermentum eget. Aenean faucibus justo ultricies, iaculis nisl id, condimentum tortor. Pellentesque commodo venenatis tempor. Fusce non ex quis risus vestibulum
+                    pulvinar eget in tellus. Nunc fermentum libero efficitur, consectetur tellus in, feugiat est.</p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3 id="6" onclick="test(this.id)">
+                    Nam tincidunt urna bibendum pellentesque lacinia.
+                </h3>
+                <p class="hide">
+                    Quisque lectus magna, aliquet sit amet orci semper, pharetra accumsan elit. Sed feugiat, massa in pellentesque hendrerit, nibh nunc efficitur mauris, eu maximus ipsum urna nec est. Quisque at accumsan ligula. Praesent rhoncus maximus nisl et elementum.
+                    Ut luctus semper eros, a pulvinar lorem dapibus vitae. Curabitur id congue ex. Morbi elit leo, porttitor in dui vitae, bibendum dapibus orci. Aliquam vel mauris a enim imperdiet tempor a a ex. Integer tempus libero turpis, non dignissim
+                    nisi ultricies id. Duis convallis vehicula lorem nec cursus. Proin consequat tellus vitae sapien hendrerit maximus. Mauris mattis dolor nec neque semper, vitae imperdiet ex fermentum. Nam finibus odio vitae augue hendrerit congue nec
+                    sodales enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            </li>
+            <li>
+                <h3 id="7" onclick="test(this.id)">
+                    Maecenas efficitur justo nec lacus tempus tempor.
+                </h3>
+                <p class="hide">
+                    Duis gravida odio vel consectetur tincidunt. Sed id tempus diam. Cras nulla dolor, tristique a laoreet at, vehicula in sapien. Sed rhoncus consectetur ornare. Vivamus laoreet ut enim sit amet congue. Nulla dui nibh, accumsan nec nulla vel, dignissim interdum
+                    turpis. Mauris molestie finibus ante, pellentesque pulvinar dui vehicula et. Phasellus libero nisl, hendrerit eu ante eget, mollis maximus sapien. Morbi faucibus sed nulla et cursus. Etiam luctus metus ipsum, sed sollicitudin arcu
+                    aliquet in. Praesent sollicitudin efficitur sodales. In dui magna, tincidunt id magna a, suscipit aliquam nunc. Quisque sit amet faucibus nisl. Aenean placerat ex blandit quam venenatis consectetur.</p>
+            </li>
+            <li>
+                <h3 id="8" onclick="test(this.id)">
+                    Morbi ac enim quis sapien tristique faucibus ac tincidunt risus.
+                </h3>
+                <p class="hide">
+                    Donec malesuada ligula pellentesque, blandit leo non, congue nunc. Aenean posuere justo tortor, vel cursus dolor interdum at. Fusce mi est, commodo vel iaculis et, feugiat vel metus. Sed non porta odio. Donec non purus et mi mattis dictum non eget quam.
+                    Proin vel ullamcorper metus. Donec porta nunc nec lorem commodo luctus. Vivamus feugiat sapien et placerat iaculis. Aenean a lorem ante. Aenean finibus augue eu mauris sodales, vel tincidunt nisi ornare. Nam condimentum in metus in
+                    vestibulum. Praesent eu neque vitae erat sagittis volutpat.</p>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <img src="./img/download-1.jpg" alt="Facebook">
+        <img src="./img/download-1.png" alt="instagram">
+        <img src="./img/download-2.jpg" alt="twitter">
+        <img src="img/download.png" alt="Mail">
+        <p>Copyright ipsum</p>
+    </footer>
 
 </body>
+
 </html>

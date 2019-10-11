@@ -1,38 +1,51 @@
-body{
-    padding:0px;
-    margin:0px;
+body {
+    padding: 0px;
+    margin: 0px;
     font: 12px/22px Arial, Helvetica, sans-serif;
-    color:#8f8b8c;
+    color: #8f8b8c;
     background: url(../img/bg.jpg) center 0 repeat;
 }
 
-header>img{
+header>img {
     width: 100%;
     display: block;
 }
 
+<<<<<<< HEAD
 nav{
+=======
+nav>ul {
+>>>>>>> Lawood
     display: flex;
     flex-direction: row;
     background-image: url(../img/header.jpg);
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 nav>ul{
+=======
+nav>ul ul {
+>>>>>>> Lawood
     display: flex;
     list-style: none;
     width: 70%;
     align-items: center;
 }
 
+<<<<<<< HEAD
 nav>ul>li{
     width: 20%;
+=======
+nav>ul>li {
+>>>>>>> Lawood
     padding: 5px;
     text-align: center;
     background-color: #e88800;
     margin-left: 1%;
     margin-right: 1%;
 }
+<<<<<<< HEAD
 nav>ul>li>ul{
 width: 19%;}
 nav>ul>li>ul>li{
@@ -40,6 +53,28 @@ padding:5px;
 }
 
 nav a{
+=======
+
+#cgu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cgu>p {
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background-image: url(../img/header.jpg);
+    justify-content: space-between;
+}
+
+header>img {
+>>>>>>> Lawood
     width: 100%;
     display: block;
     text-decoration: none;
@@ -49,11 +84,15 @@ nav a{
     line-height:22px;
 }
 
+<<<<<<< HEAD
 nav li:hover {background-color:black;}
 nav ul li a:hover {color:#e88800;
         }
 
 nav>ul ul{
+=======
+nav>ul {
+>>>>>>> Lawood
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -61,6 +100,7 @@ nav>ul ul{
     padding: 0px;
 }
 
+<<<<<<< HEAD
 .dessous{
     display: none;
     list-style: none;
@@ -74,27 +114,75 @@ nav > ul li:hover .dessous{
     display: block;
 }
 
+=======
+.dessous {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background-color: white;
+    position: absolute;
+}
 
-footer{
-    display:flex;
+nav>ul li:hover .dessous {
+    display: block;
+}
+
+nav>ul ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+>>>>>>> Lawood
+
+footer {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#social>img{
+#social>img {
     height: 20px;
     width: 20px;
 }
 
+<<<<<<< HEAD
 #stats>h4{
 margin: 0px;
+=======
+nav>ul>li {
+    padding: 5px;
 }
 
-footer>p{
+nav ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #8f8b8c;
+    line-height: 22px;
+}
+
+nav ul li a:hover {
+    color: #e88800;
+>>>>>>> Lawood
+}
+
+#stats>h4 {
     margin: 0px;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 200px) and (max-width: 640px){
 
+=======
+footer>p {
+    margin: 0px;
+>>>>>>> Lawood
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
 }
