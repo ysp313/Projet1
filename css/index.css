@@ -6,69 +6,6 @@ body {
     background: url(../img/bg.jpg) center 0 repeat;
 }
 
-header>img {
-    width: 100%;
-    display: block;
-}
-
-nav{
-    background-image: url(../img/header.jpg);
-    width: 100%;
-}
-
-.menu{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    padding: 5px;
-    text-align: center;
-    background-color: #e88800;
-    margin-left: 1%;
-}
-
-
-nav>ul>li>ul{
-width: 15%;}
-nav>ul>li>ul>li{
-padding:5px;    
-}
-
-nav a{
-    width: 100%;
-    display: block;
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:16px; 
-    color:black; 
-    line-height:22px;
-}
-
-nav li:hover {background-color:black;}
-nav ul li a:hover {color:#e88800;
-        }
-
-nav>ul ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 0px;
-    padding: 0px;
-}
-
-.dessous{
-    display: none;
-    list-style: none;
-    box-shadow: 0px 1px 2px #CCC;
-    background-color: #e88800;
-    position: absolute;
-}
-
-
-nav > ul li:hover .dessous{
-    display: block;
-}
-
-
 footer {
     display: flex;
     flex-direction: row;
@@ -81,11 +18,10 @@ footer {
     width: 20px;
 }
 
-#stats>h4{
-margin: 0px;
+#stats>h4 {
+    margin: 0px;
 }
 
 #stats>h4 {
     margin: 0px;
 }
-
